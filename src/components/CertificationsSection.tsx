@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const certifications = [
-  "IAAP Certified Professional in Accessibility Core Competencies (CPACC)",
-  "IAAP Web Accessibility Specialist (WAS)",
-  "Deque University Accessible Web Development",
-  "W3C Web Accessibility (W3Cx)",
+  "Deque University - Accessibility Program Management",
+  "Deque University - Designing an Accessible User Experience",
+  "Access 42 - Développer des sites web accessibles",
+  "IAAP Web Accessibility Specialist (WAS) (In progress)",
 ];
 
 const CertificationsSection = () => {

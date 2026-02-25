@@ -4,7 +4,7 @@ const interests = [
   {
     emoji: "🎾",
     title: "Tennis",
-    description: "Player, official, and board member of my tennis club. The sport that keeps me sharp on and off the court.",
+    description: "Player, Official, and board member of my tennis club. The sport that keeps me sharp on and off the court.",
   },
   {
     emoji: "🍳",

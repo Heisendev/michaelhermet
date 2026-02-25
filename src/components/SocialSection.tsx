@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Mail, Globe } from "lucide-react";
 const links = [
   { icon: Github, label: "GitHub", href: "https://github.com/Heisendev" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/hermetmichael/" },
-  { icon: Twitter, label: "X / Twitter", href: "#" },
+  { icon: Twitter, label: "X / Twitter", href: "https://x.com/Heisendev" },
   { icon: Mail, label: "Email", href: "mailto:hermet.mkl@gmail.com" },
 ];
 

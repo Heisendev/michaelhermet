@@ -3,31 +3,31 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     period: "2022 — Present",
-    role: "Senior Frontend Developer & Accessibility Lead",
-    company: "Company Name",
+    role: "Principal Frontend Engineer & Accessibility Lead",
+    company: "MeilleursAgent - Aviv Group",
     description:
       "Leading accessibility initiatives across product teams. Implementing WCAG 2.1 AA compliance, conducting audits, and mentoring developers on inclusive design patterns within a React/TypeScript stack.",
   },
   {
-    period: "2020 — 2022",
+    period: "2016 — 2022",
     role: "Frontend Developer",
-    company: "Company Name",
+    company: "MeilleursAgent - Aviv Group",
     description:
       "Built and maintained large-scale React applications with a focus on performance and accessibility. Integrated automated a11y testing into CI/CD pipelines.",
   },
   {
-    period: "2018 — 2020",
+    period: "2014 — 2016",
     role: "Web Developer",
-    company: "Company Name",
+    company: "UserAdgents (ESN)",
     description:
-      "Developed responsive web applications using React and Node.js. Introduced accessibility best practices and tooling to the development workflow.",
+      "Developed responsive web applications for big companies. (McDonald's, Orange, etc.) Gained experience in modern JavaScript frameworks and best practices, while collaborating closely with designers and backend teams.",
   },
   {
-    period: "2016 — 2018",
-    role: "Junior Frontend Developer",
-    company: "Company Name",
+    period: "2007 — 2014",
+    role: "Consultant",
+    company: "Keyrium (ESN)",
     description:
-      "Started professional career building UI components and learning modern JavaScript frameworks. Discovered passion for web accessibility.",
+      "Started professional career as a consultant at Orange, working on QA. This role provided a strong foundation in web technologies and client collaboration.",
   },
 ];
 
