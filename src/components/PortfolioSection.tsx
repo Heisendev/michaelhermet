@@ -5,9 +5,10 @@ const projects = [
   {
     title: "Tennis Lab",
     description:
-      "A full-stack application for managing tennis club memberships, court bookings, and tournament schedules.",
+      "A full-stack application for managing real-time tennis match data, player stats with a focus on accessibility and performance.",
     tags: ["React", "Node.js", "BetterSql", "Express"],
-    liveUrl: "#",
+    image: "/tennislab.png",
+    liveUrl: "http://tennislab.mikahermet.com",
     repoUrl: "https://github.com/Heisendev/tennislab",
   },
   {
@@ -15,26 +16,10 @@ const projects = [
     description:
       "Internal tool for tracking and reporting accessibility compliance across multiple web properties with automated testing integration.",
     tags: ["React", "Node.js", "Chart.js", "Pa11y"],
+    image: "/placeholder.svg",
     liveUrl: "#",
     repoUrl: "#",
   },
-  {
-    title: "Accessible Design System",
-    description:
-      "A fully WCAG 2.1 AA compliant component library built with React and TypeScript, featuring screen reader support and keyboard navigation.",
-    tags: ["React", "TypeScript", "a11y", "Storybook"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    title: "E-Commerce Platform",
-    description:
-      "Accessible e-commerce frontend with focus on inclusive UX — optimized for assistive technologies and responsive across all devices.",
-    tags: ["Next.js", "Tailwind CSS", "axe-core", "ARIA"],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
-  
 ];
 
 const PortfolioSection = () => {
@@ -67,41 +52,51 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group rounded-xl border border-border bg-card p-6 hover:border-primary/50 transition-colors duration-300"
+              className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/50 transition-colors duration-300"
             >
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                {project.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                <div className="aspect-video w-full overflow-hidden bg-muted">
+                <img
+                  src={project.image}
+                  alt={`Screenshot of ${project.title}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <div className="flex gap-4">
-                <a
-                  href={project.liveUrl}
-                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  aria-label={`View live demo of ${project.title}`}
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  Live Demo
-                </a>
-                <a
-                  href={project.repoUrl}
-                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  aria-label={`View source code of ${project.title}`}
-                >
-                  <Github className="w-4 h-4" />
-                  Source
-                </a>
+              <div className="p-6">
+
+                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                    {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag) => (
+                    <span
+                        key={tag}
+                        className="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20"
+                    >
+                        {tag}
+                    </span>
+                    ))}
+                </div>
+                <div className="flex gap-4">
+                    <a
+                    href={project.liveUrl}
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    aria-label={`View live demo of ${project.title}`}
+                    >
+                    <ExternalLink className="w-4 h-4" />
+                    Live Demo
+                    </a>
+                    <a
+                    href={project.repoUrl}
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    aria-label={`View source code of ${project.title}`}
+                    >
+                    <Github className="w-4 h-4" />
+                    Source
+                    </a>
+                </div>
               </div>
             </motion.div>
           ))}
