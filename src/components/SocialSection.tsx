@@ -10,7 +10,7 @@ const links = [
 
 const SocialSection = () => {
   return (
-    <section className="py-32 px-6 border-t border-border">
+    <section className="py-16 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

@@ -20,7 +20,7 @@ const experiences = [
     role: "Web Developer",
     company: "UserAdgents (ESN)",
     description:
-      "Developed responsive web applications for big companies. (McDonald's, Orange, etc.) Gained experience in modern JavaScript frameworks and best practices, while collaborating closely with designers and backend teams.",
+      "Developed responsive web applications for big companies. (McDonald's, PSG, Orange, etc.) Gained experience in modern JavaScript frameworks and best practices, while collaborating closely with designers and backend teams.",
   },
   {
     period: "2007 — 2014",
@@ -33,7 +33,7 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-32 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

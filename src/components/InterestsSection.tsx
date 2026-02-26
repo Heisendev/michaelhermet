@@ -12,15 +12,21 @@ const interests = [
     description: "Experimenting with flavors and techniques. Cooking is my creative outlet outside of code.",
   },
   {
+    emoji: "♟️",
+    title: "Chess",
+    description: "Strategizing and challenging my mind. Chess is a game of patience and foresight.",
+  },
+  {
     emoji: "🎸",
     title: "Guitar",
     description: "Strumming chords and learning new songs. Music is how I unwind and recharge.",
   },
+  
 ];
 
 const InterestsSection = () => {
   return (
-    <section className="py-32 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

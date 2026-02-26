@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const stack = {
   "Core": ["React", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
-  "Ecosystem": ["Next.js", "Node.js", "Redux", "React Query", "React Router"],
+  "Ecosystem": ["Next.js", "Node.js", "Redux", "React Query", "React Router", "AWS"],
   "Styling": ["Tailwind CSS", "Styled Components", "CSS Modules", "Sass"],
   "Testing & A11y": ["Jest", "React Testing Library", "Cypress", "axe-core", "NVDA / VoiceOver"],
   "Tooling": ["Vite", "Webpack", "Git", "GitHub Actions", "Storybook"],
@@ -10,7 +10,7 @@ const stack = {
 
 const StackSection = () => {
   return (
-    <section className="py-32 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -40,7 +40,7 @@ const StackSection = () => {
                 {items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1.5 text-sm rounded-full border border-border bg-secondary text-secondary-foreground hover:border-primary/40 transition-colors"
+                    className="px-3 py-1.5 text-sm rounded-full border border-border text-foreground hover:border-primary/40 transition-colors"
                   >
                     {item}
                   </span>
