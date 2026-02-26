@@ -8,7 +8,7 @@ const projects = [
       "A full-stack application for managing real-time tennis match data, player stats with a focus on accessibility and performance.",
     tags: ["React", "Node.js", "BetterSql", "Express"],
     image: "/tennislab.png",
-    liveUrl: "http://tennislab.mikahermet.com",
+    liveUrl: "http://tennislab.mikahermet.fr",
     repoUrl: "https://github.com/Heisendev/tennislab",
   },
   {
