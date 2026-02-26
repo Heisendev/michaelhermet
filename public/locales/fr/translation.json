@@ -1,0 +1,148 @@
+{
+  "language": {
+    "en": "EN",
+    "fr": "FR"
+  },
+  "hero": {
+    "profileAlt": "Photo de profil",
+    "role": "Développeur Frontend · Spécialiste Accessibilité",
+    "title": {
+      "prefix": "Concevoir des",
+      "highlight": "expériences",
+      "suffix": "numériques accessibles"
+    },
+    "description": "Je construis des applications web inclusives et performantes avec l’écosystème React. Je suis passionné par un web utilisable par toutes et tous, quelles que soient les capacités.",
+    "scroll": "Faites défiler pour découvrir"
+  },
+  "about": {
+    "label": "À propos",
+    "title": {
+      "prefix": "Construire le lien entre",
+      "highlight": "Design & Inclusion"
+    },
+    "paragraph1": "Je suis développeur frontend avec un engagement fort pour l’accessibilité numérique. Grâce à plusieurs certifications sur les standards d’accessibilité web (WCAG, ARIA, RGAA), j’aide les organisations à créer des produits non seulement élégants, mais réellement utilisables par toutes et tous.",
+    "paragraph2": "Mon expertise se situe à l’intersection de l’écosystème React et de Node.js, où je développe des applications scalables et performantes, avec l’accessibilité pensée dès la conception — et non ajoutée après coup."
+  },
+  "stack": {
+    "label": "Stack Technique",
+    "title": "Les outils que j’utilise",
+    "categories": {
+      "core": "Fondations",
+      "ecosystem": "Écosystème",
+      "styling": "Styles",
+      "testingA11y": "Tests & A11y",
+      "tooling": "Outillage"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Une sélection de projets illustrant mon travail en développement frontend et accessibilité numérique.",
+    "screenshotAlt": "Capture d’écran de {{title}}",
+    "liveDemo": "Démo",
+    "source": "Code source",
+    "liveDemoAria": "Voir la démo de {{title}}",
+    "sourceAria": "Voir le code source de {{title}}",
+    "projects": {
+      "tennisLab": {
+        "title": "Tennis Lab",
+        "description": "Une application full-stack pour gérer des données de matchs de tennis en temps réel et des statistiques joueurs, avec un fort focus sur l’accessibilité et la performance."
+      },
+      "accessibilityDashboard": {
+        "title": "Tableau de bord d’audit accessibilité",
+        "description": "Outil interne pour suivre et reporter la conformité accessibilité sur plusieurs propriétés web, avec intégration de tests automatisés."
+      }
+    }
+  },
+  "experience": {
+    "label": "Expérience",
+    "title": "Parcours professionnel",
+    "items": {
+      "principal": {
+        "period": "2022 — Aujourd’hui",
+        "role": "Principal Frontend Engineer & Accessibility Lead",
+        "company": "MeilleursAgent - Aviv Group",
+        "description": "Pilotage des initiatives d’accessibilité auprès des équipes produit. Mise en œuvre de la conformité WCAG 2.1 AA, audits, et accompagnement des développeurs sur les patterns de design inclusif dans une stack React/TypeScript."
+      },
+      "frontend": {
+        "period": "2016 — 2022",
+        "role": "Développeur Frontend",
+        "company": "MeilleursAgent - Aviv Group",
+        "description": "Conception et maintenance d’applications React à grande échelle, avec un focus sur la performance et l’accessibilité. Intégration de tests a11y automatisés dans les pipelines CI/CD."
+      },
+      "web": {
+        "period": "2014 — 2016",
+        "role": "Développeur Web",
+        "company": "UserAdgents (ESN)",
+        "description": "Développement d’applications web responsives pour de grandes entreprises (McDonald’s, PSG, Orange, etc.). Expérience acquise sur les frameworks JavaScript modernes et les bonnes pratiques, en collaboration étroite avec designers et équipes backend."
+      },
+      "consultant": {
+        "period": "2007 — 2014",
+        "role": "Consultant",
+        "company": "Keyrium (ESN)",
+        "description": "Début de carrière chez Orange en tant que consultant QA. Ce poste m’a donné de solides bases en technologies web et en collaboration client."
+      }
+    }
+  },
+  "certifications": {
+    "label": "Certifications",
+    "title": "Parcours & expertise",
+    "items": {
+      "dequeProgramManagement": "Deque University - Accessibility Program Management",
+      "dequeDesigningUx": "Deque University - Designing an Accessible User Experience",
+      "access42": "Access 42 - Développer des sites web accessibles",
+      "iaap": "IAAP Web Accessibility Specialist (WAS) (En cours)"
+    }
+  },
+  "interests": {
+    "label": "Au-delà du code",
+    "title": "Quand je ne code pas",
+    "items": {
+      "tennis": {
+        "title": "Tennis",
+        "description": "Joueur, Officiel (Juge Arbitre régional) et membre du comité directeur de mon club. Le sport qui me garde affûté sur et en dehors du court."
+      },
+      "cooking": {
+        "title": "Cuisine",
+        "description": "J’expérimente les saveurs et les techniques. La cuisine est mon espace créatif hors du code."
+      },
+      "chess": {
+        "title": "Échecs et jeu de Go",
+        "description": "Les échecs et le jeu de Go me font travailler la stratégie et la réflexion. Ce sont des jeux de patience et d’anticipation."
+      },
+      "guitar": {
+        "title": "Guitare",
+        "description": "Je gratte quelques accords et j’apprends de nouveaux morceaux. La musique est ma façon de décompresser."
+      }
+    }
+  },
+  "languages": {
+    "label": "Langues",
+    "title": {
+      "prefix": "Parler au-delà des",
+      "highlight": "frontières"
+    },
+    "items": {
+      "french": {
+        "name": "Français",
+        "level": "Langue maternelle"
+      },
+      "english": {
+        "name": "Anglais",
+        "level": "Courant"
+      },
+      "portuguese": {
+        "name": "Portugais",
+        "level": "Apprentissage"
+      }
+    }
+  },
+  "social": {
+    "title": "Restons en contact",
+    "subtitle": "Toujours partant pour des échanges intéressants, des collaborations et de nouvelles opportunités.",
+    "footer": "Conçu avec soin et l’accessibilité à l’esprit"
+  },
+  "notFound": {
+    "title": "Oups ! Page introuvable",
+    "cta": "Retour à l’accueil"
+  }
+}

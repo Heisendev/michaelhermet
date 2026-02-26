@@ -1,30 +1,33 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const interests = [
   {
     emoji: "🎾",
-    title: "Tennis",
-    description: "Player, Official, and board member of my tennis club. The sport that keeps me sharp on and off the court.",
+    titleKey: "interests.items.tennis.title",
+    descriptionKey: "interests.items.tennis.description",
   },
   {
     emoji: "🍳",
-    title: "Cooking",
-    description: "Experimenting with flavors and techniques. Cooking is my creative outlet outside of code.",
+    titleKey: "interests.items.cooking.title",
+    descriptionKey: "interests.items.cooking.description",
   },
   {
     emoji: "♟️",
-    title: "Chess",
-    description: "Strategizing and challenging my mind. Chess is a game of patience and foresight.",
+    titleKey: "interests.items.chess.title",
+    descriptionKey: "interests.items.chess.description",
   },
   {
     emoji: "🎸",
-    title: "Guitar",
-    description: "Strumming chords and learning new songs. Music is how I unwind and recharge.",
+    titleKey: "interests.items.guitar.title",
+    descriptionKey: "interests.items.guitar.description",
   },
   
 ];
 
 const InterestsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
@@ -34,9 +37,9 @@ const InterestsSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-4">Beyond Code</p>
+          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-4">{t("interests.label")}</p>
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-16">
-            When I'm not coding
+            {t("interests.title")}
           </h2>
         </motion.div>
 
@@ -51,8 +54,8 @@ const InterestsSection = () => {
               className="group p-6 rounded-lg border border-border bg-card hover:border-primary/30 transition-all hover:-translate-y-1"
             >
               <span className="text-4xl mb-4 block">{interest.emoji}</span>
-              <h3 className="text-foreground font-display font-bold text-xl mb-2">{interest.title}</h3>
-              <p className="text-foreground text-sm leading-relaxed">{interest.description}</p>
+              <h3 className="text-foreground font-display font-bold text-xl mb-2">{t(interest.titleKey)}</h3>
+              <p className="text-foreground text-sm leading-relaxed">{t(interest.descriptionKey)}</p>
             </motion.div>
           ))}
         </div>

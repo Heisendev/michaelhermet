@@ -1,37 +1,36 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Principal Frontend Engineer & Accessibility Lead",
-    company: "MeilleursAgent - Aviv Group",
-    description:
-      "Leading accessibility initiatives across product teams. Implementing WCAG 2.1 AA compliance, conducting audits, and mentoring developers on inclusive design patterns within a React/TypeScript stack.",
+    periodKey: "experience.items.principal.period",
+    roleKey: "experience.items.principal.role",
+    companyKey: "experience.items.principal.company",
+    descriptionKey: "experience.items.principal.description",
   },
   {
-    period: "2016 — 2022",
-    role: "Frontend Developer",
-    company: "MeilleursAgent - Aviv Group",
-    description:
-      "Built and maintained large-scale React applications with a focus on performance and accessibility. Integrated automated a11y testing into CI/CD pipelines.",
+    periodKey: "experience.items.frontend.period",
+    roleKey: "experience.items.frontend.role",
+    companyKey: "experience.items.frontend.company",
+    descriptionKey: "experience.items.frontend.description",
   },
   {
-    period: "2014 — 2016",
-    role: "Web Developer",
-    company: "UserAdgents (ESN)",
-    description:
-      "Developed responsive web applications for big companies. (McDonald's, PSG, Orange, etc.) Gained experience in modern JavaScript frameworks and best practices, while collaborating closely with designers and backend teams.",
+    periodKey: "experience.items.web.period",
+    roleKey: "experience.items.web.role",
+    companyKey: "experience.items.web.company",
+    descriptionKey: "experience.items.web.description",
   },
   {
-    period: "2007 — 2014",
-    role: "Consultant",
-    company: "Keyrium (ESN)",
-    description:
-      "Started professional career as a consultant at Orange, working on QA. This role provided a strong foundation in web technologies and client collaboration.",
+    periodKey: "experience.items.consultant.period",
+    roleKey: "experience.items.consultant.role",
+    companyKey: "experience.items.consultant.company",
+    descriptionKey: "experience.items.consultant.description",
   },
 ];
 
 const ExperienceSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
@@ -41,9 +40,9 @@ const ExperienceSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-4">Experience</p>
+          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-4">{t("experience.label")}</p>
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-16">
-            Professional journey
+            {t("experience.title")}
           </h2>
         </motion.div>
 
@@ -65,14 +64,14 @@ const ExperienceSection = () => {
                 <div className="absolute left-0 md:left-[140px] top-1.5 w-2 h-2 rounded-full bg-primary -translate-x-[3.5px]" />
 
                 <p className="text-muted-foreground text-sm font-body mb-2 md:mb-0 md:text-right md:pr-2">
-                  {exp.period}
+                  {t(exp.periodKey)}
                 </p>
 
                 <div className="md:pl-8">
-                  <h3 className="text-foreground font-body font-bold text-lg">{exp.role}</h3>
-                  <p className="text-primary text-sm mb-3">{exp.company}</p>
+                  <h3 className="text-foreground font-body font-bold text-lg">{t(exp.roleKey)}</h3>
+                  <p className="text-primary text-sm mb-3">{t(exp.companyKey)}</p>
                   <p className="text-foreground leading-relaxed text-sm">
-                    {exp.description}
+                    {t(exp.descriptionKey)}
                   </p>
                 </div>
               </motion.div>

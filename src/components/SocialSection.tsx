@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail, Globe } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const links = [
   { icon: Github, label: "GitHub", href: "https://github.com/Heisendev" },
@@ -9,6 +10,8 @@ const links = [
 ];
 
 const SocialSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto text-center">
@@ -19,10 +22,10 @@ const SocialSection = () => {
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-            Let's connect
+            {t("social.title")}
           </h2>
           <p className="text-muted-foreground mb-12 max-w-md mx-auto">
-            Always open to interesting conversations, collaborations, and new opportunities.
+            {t("social.subtitle")}
           </p>
         </motion.div>
 
@@ -48,7 +51,7 @@ const SocialSection = () => {
         </motion.div>
 
         <p className="mt-24 text-muted-foreground text-xs">
-          © {new Date().getFullYear()} — Built with care & accessibility in mind
+          © {new Date().getFullYear()} — {t("social.footer")}
         </p>
       </div>
     </section>

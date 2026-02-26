@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
       {/* Subtle grid background */}
@@ -19,7 +22,7 @@ const HeroSection = () => {
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-primary/30 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.3)]">
             <img
               src="/profile.jpg"
-              alt="Profile photo"
+              alt={t("hero.profileAlt")}
               className="w-full h-full object-cover"
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = 'none';
@@ -37,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-6"
         >
-          Frontend Developer · Accessibility Specialist
+          {t("hero.role")}
         </motion.p>
 
         <motion.h1
@@ -46,10 +49,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="text-5xl md:text-7xl lg:text-8xl font-display font-900 leading-[0.95] mb-8"
         >
-          Crafting{" "}
-          <span className="italic text-gradient">accessible</span>
+          {t("hero.title.prefix")} {" "}
+          <span className="italic text-gradient">{t("hero.title.highlight")}</span>
           <br />
-          digital experiences
+          {t("hero.title.suffix")}
         </motion.h1>
 
         <motion.p
@@ -58,8 +61,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
         >
-          I build inclusive, performant web applications with the React ecosystem.
-          Passionate about ensuring the web is usable by everyone, regardless of ability.
+          {t("hero.description")}
         </motion.p>
 
         <motion.div
@@ -68,7 +70,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 flex items-center justify-center gap-2 text-muted-foreground text-sm"
         >
-          <span>Scroll to explore</span>
+          <span>{t("hero.scroll")}</span>
           <motion.span
             animate={{ y: [0, 6, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}

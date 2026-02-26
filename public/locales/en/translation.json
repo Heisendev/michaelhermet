@@ -1,0 +1,148 @@
+{
+  "language": {
+    "en": "EN",
+    "fr": "FR"
+  },
+  "hero": {
+    "profileAlt": "Profile photo",
+    "role": "Frontend Developer · Accessibility Specialist",
+    "title": {
+      "prefix": "Crafting",
+      "highlight": "accessible",
+      "suffix": "digital experiences"
+    },
+    "description": "I build inclusive, performant web applications with the React ecosystem. Passionate about ensuring the web is usable by everyone, regardless of ability.",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "label": "About",
+    "title": {
+      "prefix": "Building bridges between",
+      "highlight": "design & inclusion"
+    },
+    "paragraph1": "I'm a frontend developer with a deep commitment to digital accessibility. With multiple certifications in web accessibility standards (WCAG, ARIA, RGAA), I help organizations create products that are not just beautiful, but truly usable by everyone.",
+    "paragraph2": "My expertise lives at the intersection of the React ecosystem and Node.js, where I build scalable, performant applications with accessibility baked in from the ground up — not bolted on as an afterthought."
+  },
+  "stack": {
+    "label": "Tech Stack",
+    "title": "Tools I work with",
+    "categories": {
+      "core": "Core",
+      "ecosystem": "Ecosystem",
+      "styling": "Styling",
+      "testingA11y": "Testing & A11y",
+      "tooling": "Tooling"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Selected projects showcasing my work in frontend development and digital accessibility.",
+    "screenshotAlt": "Screenshot of {{title}}",
+    "liveDemo": "Live Demo",
+    "source": "Source",
+    "liveDemoAria": "View live demo of {{title}}",
+    "sourceAria": "View source code of {{title}}",
+    "projects": {
+      "tennisLab": {
+        "title": "Tennis Lab",
+        "description": "A full-stack application for managing real-time tennis match data, player stats with a focus on accessibility and performance."
+      },
+      "accessibilityDashboard": {
+        "title": "Accessibility Audit Dashboard",
+        "description": "Internal tool for tracking and reporting accessibility compliance across multiple web properties with automated testing integration."
+      }
+    }
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Professional journey",
+    "items": {
+      "principal": {
+        "period": "2022 — Present",
+        "role": "Principal Frontend Engineer & Accessibility Lead",
+        "company": "MeilleursAgent - Aviv Group",
+        "description": "Leading accessibility initiatives across product teams. Implementing WCAG 2.1 AA compliance, conducting audits, and mentoring developers on inclusive design patterns within a React/TypeScript stack."
+      },
+      "frontend": {
+        "period": "2016 — 2022",
+        "role": "Frontend Developer",
+        "company": "MeilleursAgent - Aviv Group",
+        "description": "Built and maintained large-scale React applications with a focus on performance and accessibility. Integrated automated a11y testing into CI/CD pipelines."
+      },
+      "web": {
+        "period": "2014 — 2016",
+        "role": "Web Developer",
+        "company": "UserAdgents (ESN)",
+        "description": "Developed responsive web applications for big companies. (McDonald's, PSG, Orange, etc.) Gained experience in modern JavaScript frameworks and best practices, while collaborating closely with designers and backend teams."
+      },
+      "consultant": {
+        "period": "2007 — 2014",
+        "role": "Consultant",
+        "company": "Keyrium (ESN)",
+        "description": "Started professional career as a consultant at Orange, working on QA. This role provided a strong foundation in web technologies and client collaboration."
+      }
+    }
+  },
+  "certifications": {
+    "label": "Certifications",
+    "title": "Credentials & expertise",
+    "items": {
+      "dequeProgramManagement": "Deque University - Accessibility Program Management",
+      "dequeDesigningUx": "Deque University - Designing an Accessible User Experience",
+      "access42": "Access 42 - Développer des sites web accessibles",
+      "iaap": "IAAP Web Accessibility Specialist (WAS) (In progress)"
+    }
+  },
+  "interests": {
+    "label": "Beyond Code",
+    "title": "When I'm not coding",
+    "items": {
+      "tennis": {
+        "title": "Tennis",
+        "description": "Player, Official, and board member of my tennis club. The sport that keeps me sharp on and off the court."
+      },
+      "cooking": {
+        "title": "Cooking",
+        "description": "Experimenting with flavors and techniques. Cooking is my creative outlet outside of code."
+      },
+      "chess": {
+        "title": "Chess and Go",
+        "description": "Strategizing and challenging my mind. Chess and Go are games of patience and foresight."
+      },
+      "guitar": {
+        "title": "Guitar",
+        "description": "Strumming chords and learning new songs. Music is how I unwind and recharge."
+      }
+    }
+  },
+  "languages": {
+    "label": "Languages",
+    "title": {
+      "prefix": "Speaking across",
+      "highlight": "borders"
+    },
+    "items": {
+      "french": {
+        "name": "French",
+        "level": "Native"
+      },
+      "english": {
+        "name": "English",
+        "level": "Fluent"
+      },
+      "portuguese": {
+        "name": "Portuguese",
+        "level": "Learning"
+      }
+    }
+  },
+  "social": {
+    "title": "Let's connect",
+    "subtitle": "Always open to interesting conversations, collaborations, and new opportunities.",
+    "footer": "Built with care & accessibility in mind"
+  },
+  "notFound": {
+    "title": "Oops! Page not found",
+    "cta": "Return to Home"
+  }
+}
