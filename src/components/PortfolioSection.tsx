@@ -17,7 +17,7 @@ const projects = [
     tags: ["React", "Node.js", "Chart.js", "Pa11y"],
     image: "/placeholder.svg",
     liveUrl: "#",
-    repoUrl: "#",
+    repoUrl: "https://github.com/Heisendev/AccessibilityMonitor",
   },
 ];
 
@@ -82,14 +82,14 @@ const PortfolioSection = () => {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <a
+                    {project.liveUrl !== "#"  && <a
                       href={project.liveUrl}
                       className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                       aria-label={t("portfolio.liveDemoAria", { title: projectTitle })}
                     >
                       <ExternalLink className="w-4 h-4" />
                       {t("portfolio.liveDemo")}
-                    </a>
+                    </a> }
                     <a
                       href={project.repoUrl}
                       className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
