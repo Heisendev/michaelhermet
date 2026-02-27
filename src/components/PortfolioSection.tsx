@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const projects = [
@@ -7,7 +8,7 @@ const projects = [
     titleKey: "portfolio.projects.tennisLab.title",
     descriptionKey: "portfolio.projects.tennisLab.description",
     tags: ["React", "Node.js", "BetterSql", "Express"],
-    image: "/tennislab.png",
+    images: ["/tennislab1.png", "/tennislab2.png"],
     liveUrl: "http://tennislab.mikahermet.fr",
     repoUrl: "https://github.com/Heisendev/tennislab",
   },
@@ -15,11 +16,60 @@ const projects = [
     titleKey: "portfolio.projects.accessibilityDashboard.title",
     descriptionKey: "portfolio.projects.accessibilityDashboard.description",
     tags: ["React", "Node.js", "Chart.js", "Pa11y"],
-    image: "/placeholder.svg",
+    images: ["/a11ymonitor1.png", "/a11ymonitor2.png"],
     liveUrl: "#",
     repoUrl: "https://github.com/Heisendev/AccessibilityMonitor",
   },
 ];
+
+const ImageSlideshow = ({ images, title }: { images: string[]; title: string }) => {
+  const [current, setCurrent] = useState(0);
+  const prev = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrent((c) => (c === 0 ? images.length - 1 : c - 1));
+  };
+  const next = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCurrent((c) => (c === images.length - 1 ? 0 : c + 1));
+  };
+  return (
+    <div className="aspect-video w-full overflow-hidden bg-muted relative group/slideshow">
+      <img
+        src={images[current]}
+        alt={`Screenshot ${current + 1} of ${title}`}
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={prev}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm rounded-full p-1.5 opacity-0 group-hover/slideshow:opacity-100 transition-opacity hover:bg-background focus:opacity-100"
+            aria-label="Previous screenshot"
+          >
+            <ChevronLeft className="w-4 h-4 text-foreground" />
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm rounded-full p-1.5 opacity-0 group-hover/slideshow:opacity-100 transition-opacity hover:bg-background focus:opacity-100"
+            aria-label="Next screenshot"
+          >
+            <ChevronRight className="w-4 h-4 text-foreground" />
+          </button>
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={(e) => { e.preventDefault(); setCurrent(i); }}
+                className={`w-1.5 h-1.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-background/60"}`}
+                aria-label={`Go to screenshot ${i + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
 const PortfolioSection = () => {
   const { t } = useTranslation();
@@ -57,13 +107,7 @@ const PortfolioSection = () => {
                 viewport={{ once: true }}
                 className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/50 transition-colors duration-300"
               >
-                <div className="aspect-video w-full overflow-hidden bg-muted">
-                  <img
-                    src={project.image}
-                    alt={t("portfolio.screenshotAlt", { title: projectTitle })}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+                <ImageSlideshow images={project.images} title={project.titleKey} />
                 <div className="p-6">
                   <h3 className="font-display text-xl font-semibold text-foreground mb-3">
                     {projectTitle}
