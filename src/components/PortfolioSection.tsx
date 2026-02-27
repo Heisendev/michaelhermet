@@ -15,7 +15,7 @@ const projects = [
   {
     titleKey: "portfolio.projects.accessibilityDashboard.title",
     descriptionKey: "portfolio.projects.accessibilityDashboard.description",
-    tags: ["React", "Node.js", "Chart.js", "Pa11y"],
+    tags: ["React", "Chart.js", "Axe-core", "Playwright", "Docker"],
     images: ["/a11ymonitor1.png", "/a11ymonitor2.png"],
     liveUrl: "#",
     repoUrl: "https://github.com/Heisendev/AccessibilityMonitor",
