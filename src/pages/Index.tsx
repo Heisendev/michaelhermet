@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import BlogSection from "@/components/BlogSection";
 
 const AboutSection = lazy(() => import("@/components/AboutSection"));
@@ -15,9 +14,6 @@ const SocialSection = lazy(() => import("@/components/SocialSection"));
 const Index = () => {
   return (
     <main className="bg-background text-foreground">
-      <div className="fixed top-4 right-4 z-50">
-        <LanguageSwitcher />
-      </div>
       <HeroSection />
       <Suspense fallback={null}>
         <AboutSection />

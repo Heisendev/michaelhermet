@@ -5,7 +5,6 @@ import Markdown from 'react-markdown'
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect, useState } from "react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -25,9 +24,6 @@ const BlogPost = () => {
 
   return (
     <main className="bg-background text-foreground min-h-screen">
-        <div className="fixed top-4 right-4 z-50">
-            <LanguageSwitcher />
-        </div>
       <article className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

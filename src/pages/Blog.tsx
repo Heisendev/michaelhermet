@@ -1,17 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 const Blog = () => {
     const { t } = useTranslation();
   return (
     <main className="bg-background text-foreground min-h-screen">
-        <div className="fixed top-4 right-4 z-50">
-            <LanguageSwitcher />
-        </div>
       <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
