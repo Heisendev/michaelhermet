@@ -1,5 +1,3 @@
-# Créer des formulaires accessibles : guide pratique d’ingénierie
-
 Les formulaires accessibles ne sont pas un « plus ». Ce sont des surfaces d’interaction centrales dans tout produit : authentification, paiement, onboarding, paramètres et collecte de données. Si un formulaire n’est pas accessible, votre produit n’est pas utilisable.
 
 Ce guide explique comment créer des formulaires accessibles d’un point de vue ingénierie, en s’alignant sur les Web Content Accessibility Guidelines (WCAG 2.x) et sur des patterns d’implémentation frontend concrets.

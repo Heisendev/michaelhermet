@@ -1,5 +1,3 @@
-# Building Accessible Forms: A Practical Engineering Guide
-
 Accessible forms are not a “nice-to-have.” They are core interaction surfaces in any product: authentication, checkout, onboarding, settings, and data capture. If a form is not accessible, your product is not usable.
 
 This guide walks through how to build accessible forms from an engineering perspective, aligned with Web Content Accessibility Guidelines (WCAG 2.x) and practical frontend implementation patterns.

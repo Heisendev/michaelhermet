@@ -1,5 +1,3 @@
-# The Intersection of Performance and Accessibility
-
 Performance and accessibility are often treated as separate concerns. In practice, they are tightly coupled.
 
 A fast application that is unusable by assistive technologies is exclusionary.

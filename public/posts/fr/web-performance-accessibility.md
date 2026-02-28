@@ -1,5 +1,3 @@
-# L’intersection entre performance et accessibilité
-
 La performance et l’accessibilité sont souvent traitées comme des sujets séparés. En pratique, elles sont étroitement liées.
 
 Une application rapide mais inutilisable avec des technologies d’assistance est excluante.
