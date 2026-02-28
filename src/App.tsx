@@ -9,7 +9,7 @@ import BlogPost from "./pages/BlogPost";
 import ThemeProvider from "./components/ThemeProvider";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import ThemeToggle from "./components/ThemeToggle";
-
+import { Analytics } from "@vercel/analytics/next"
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -43,6 +43,7 @@ const App = () => (
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
+    <Analytics />
   </ThemeProvider>
 );
 
