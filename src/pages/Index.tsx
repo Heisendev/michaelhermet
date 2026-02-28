@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import BlogSection from "@/components/BlogSection";
 
 const AboutSection = lazy(() => import("@/components/AboutSection"));
 const StackSection = lazy(() => import("@/components/StackSection"));
@@ -22,6 +23,7 @@ const Index = () => {
         <AboutSection />
         <StackSection />
         <PortfolioSection />
+        <BlogSection />
         <ExperienceSection />
         <CertificationsSection />
         <InterestsSection />

@@ -31,7 +31,7 @@ const LanguagesSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group rounded-2xl border border-border/50 bg-card/50 backdrop-blur-sm p-8 text-center hover:border-primary/30 transition-colors"
+                className="article group rounded-2xl border border-border/50 bg-card/50 backdrop-blur-sm p-8 text-center hover:border-primary/30 transition-colors"
               >
                 <span className="text-5xl mb-4 block">{lang.flag}</span>
                 <h3 className="text-xl font-display font-semibold text-foreground mb-1">{t(lang.nameKey)}</h3>

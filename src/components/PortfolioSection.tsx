@@ -108,7 +108,7 @@ const PortfolioSection = () => {
                 className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/50 transition-colors duration-300"
               >
                 <ImageSlideshow images={project.images} title={project.titleKey} />
-                <div className="p-6">
+                <div className="p-6 article">
                   <h3 className="font-display text-xl font-semibold text-foreground mb-3">
                     {projectTitle}
                   </h3>

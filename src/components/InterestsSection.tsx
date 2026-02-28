@@ -51,7 +51,7 @@ const InterestsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.12 }}
-              className="group p-6 rounded-lg border border-border bg-card hover:border-primary/30 transition-all hover:-translate-y-1"
+              className="article group p-6 rounded-lg border border-border bg-card hover:border-primary/30 transition-all hover:-translate-y-1"
             >
               <span className="text-4xl mb-4 block">{interest.emoji}</span>
               <h3 className="text-foreground font-display font-bold text-xl mb-2">{t(interest.titleKey)}</h3>

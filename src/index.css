@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
 
 @layer base {
   :root {
@@ -123,6 +124,10 @@
 
   ::selection {
     background: hsl(38 92% 60% / 0.3);
+  }
+
+  .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+    font-family: var(--font-sans)
   }
 }
 
