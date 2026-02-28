@@ -3,6 +3,10 @@
     "en": "EN",
     "fr": "FR"
   },
+  "common": {
+    "loading": "Loading...",
+    "backHome": "Retour à l’accueil"
+  },
   "hero": {
     "profileAlt": "Photo de profil",
     "role": "Développeur Frontend · Spécialiste Accessibilité",
@@ -135,6 +139,12 @@
         "level": "Apprentissage"
       }
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Réflexions sur l'accessibilité et le développement frontend",
+    "subtitle": "Partage d'idées, de tutos et des bonnes pratiques pour aider les développeurs à créer des expériences web plus inclusives.",
+    "viewAllPosts": "Voir tous les articles"
   },
   "social": {
     "title": "Restons en contact",

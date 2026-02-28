@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
+    const { t } = useTranslation();
   return (
     <main className="bg-background text-foreground min-h-screen">
+        <div className="fixed top-4 right-4 z-50">
+            <LanguageSwitcher />
+        </div>
       <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,14 +23,14 @@ const Blog = () => {
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to home
+            {t("common.backHome")}
           </Link>
 
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            Blog
+            {t("blog.label")}
           </h1>
           <p className="text-muted-foreground text-lg mb-16 max-w-xl">
-            Thoughts on accessibility, frontend development, and building a more inclusive web.
+            {t("blog.title")}
           </p>
         </motion.div>
 

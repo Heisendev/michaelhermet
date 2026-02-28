@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 
 const BlogSection = () => {
+    const { t, i18n } = useTranslation();
   const latestPosts = blogPosts.slice(0, 2);
 
   return (
@@ -21,14 +23,14 @@ const BlogSection = () => {
               Blog
             </h2>
             <p className="text-muted-foreground max-w-xl">
-              Latest thoughts on accessibility and frontend development.
+              {t("blog.subtitle")}
             </p>
           </div>
           <Link
             to="/blog"
             className="hidden md:inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            View all posts
+            {t("blog.viewAllPosts")}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
@@ -68,10 +70,10 @@ const BlogSection = () => {
                     </span>
                   </div>
                   <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {post.title}
+                    {i18n.language === "fr" ? post.titles.fr : post.titles.en}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {post.excerpt}
+                    {i18n.language === "fr" ? post.excerpts.fr : post.excerpts.en}
                   </p>
                 </div>
               </Link>
@@ -84,7 +86,7 @@ const BlogSection = () => {
             to="/blog"
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            View all posts
+            {t("blog.viewAllPosts")}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

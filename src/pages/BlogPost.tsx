@@ -1,27 +1,33 @@
 import { useParams, Link, Navigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import Markdown from 'react-markdown'
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect, useState } from "react";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { i18n } = useTranslation();
   const post = blogPosts.find((p) => p.slug === slug);
   const [markdownContent, setMarkdownContent] = useState("");
 
   useEffect(() => {
     if (post) {
-      fetch(`/posts/${post.slug}.md`)
+      fetch(`/posts/${i18n.language}/${post.slug}.md`)
         .then((response) => response.text())
         .then((text) => setMarkdownContent(text));
     }
-  }, [post]);
+  }, [post, i18n.language]);
 
   if (!post) return <Navigate to="/blog" replace />;
 
   return (
     <main className="bg-background text-foreground min-h-screen">
+        <div className="fixed top-4 right-4 z-50">
+            <LanguageSwitcher />
+        </div>
       <article className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +58,7 @@ const BlogPost = () => {
           </div>
 
           <h1 className="font-display text-3xl md:text-5xl font-bold leading-tight mb-6">
-            {post.title}
+            {i18n.language === "fr" ? post.titles.fr : post.titles.en}
           </h1>
 
           <div className="flex flex-wrap gap-2 mb-10">
@@ -70,7 +76,7 @@ const BlogPost = () => {
             <img
               src={post.image}
               alt=""
-              className="w-full h-full object-cover"
+              className="object-cover"
             />
           </div>
         </motion.div>

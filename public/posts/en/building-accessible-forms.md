@@ -4,20 +4,6 @@ Accessible forms are not a “nice-to-have.” They are core interaction surface
 
 This guide walks through how to build accessible forms from an engineering perspective, aligned with Web Content Accessibility Guidelines (WCAG 2.x) and practical frontend implementation patterns.
 
-## Table of Contents
-
-- [1. Start with Semantics, Not ARIA](#1-start-with-semantics-not-aria)
-- [2. Group Related Fields Properly](#2-group-related-fields-properly)
-- [3. Error Handling: Accessible and Predictable](#3-error-handling-accessible-and-predictable)
-- [4. Required Fields: Communicate Clearly](#4-required-fields-communicate-clearly)
-- [5. Keyboard Accessibility Is Non-Negotiable](#5-keyboard-accessibility-is-non-negotiable)
-- [6. Accessible Name Calculation Matters](#6-accessible-name-calculation-matters)
-- [7. Timing & Validation Strategy](#7-timing--validation-strategy)
-- [8. Accessible Forms in React](#8-accessible-forms-in-react)
-- [9. Testing Strategy](#9-testing-strategy)
-- [10. Business Case: Why It Matters](#10-business-case-why-it-matters)
-- [Conclusion](#conclusion)
-
 ## 1. Start with Semantics, Not ARIA
 
 The first rule of accessible forms: use native HTML correctly before adding ARIA.

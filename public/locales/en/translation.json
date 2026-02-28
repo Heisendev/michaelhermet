@@ -3,6 +3,10 @@
     "en": "EN",
     "fr": "FR"
   },
+  "common": {
+    "loading": "Loading...",
+    "backHome": "Back to Home"
+  },
   "hero": {
     "profileAlt": "Profile photo",
     "role": "Frontend Developer · Accessibility Specialist",
@@ -135,6 +139,12 @@
         "level": "Learning"
       }
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Thoughts on Accessibility & Frontend Development",
+    "subtitle": "Sharing insights, tutorials, and best practices to help developers build more inclusive web experiences.",
+    "viewAllPosts": "View all posts"
   },
   "social": {
     "title": "Let's connect",
